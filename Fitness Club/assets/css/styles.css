@@ -1,0 +1,218 @@
+/*==== GOOGLE FONTS ====*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+
+/*==== VARIABLES CSS ====*/
+:root {
+    --primary-color: #fe9808;
+    --secondary-color: #e88a07;
+    --bg-color: #ffffff;
+    --text-color: #213547;
+    --card-bg: #f9f9f9;
+    --nav-bg: rgba(255, 255, 255, 0.8);
+}
+
+.dark {
+    --bg-color: #242424;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --card-bg: #1a1a1a;
+    --nav-bg: rgba(26, 26, 26, 0.8);
+}
+
+/*==== BASE ====*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 6rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.4em;
+    margin-bottom: 2rem;
+}
+
+/* === Navbar === */
+nav {
+    width: 100%;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.nav-content {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-num i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.logo a img {
+    width: 96px;
+    position: absolute;
+    top: 0;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+#theme-toggle,
+#mobile-menu {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url("../images/hero.jpg"); /* Replace with your image URL */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: var(--overlay-color); /* Light overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 600px; /* Set a custom max-width for the content */
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.hero-subtitle {
+    color: var(--primary-color); /* Dynamic primary color */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-quote {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: var(--primary-color); /* Dynamic primary color */
+    color: var(--text-color); /* Dynamic text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: var(--primary-dark); /* Slightly darker on hover */
+}
+
+/* Background Colors */
+.hero-section {
+    background-color: var(--bg-color); /* Dynamic background color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-quote {
+        font-size: 1rem;
+    }
+}
+/* ==== */
+@media (max-width: 768px) {
+    .nav-links,
+    .info-num {
+        display: none;
+    }
+    #mobile-menu {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+}
