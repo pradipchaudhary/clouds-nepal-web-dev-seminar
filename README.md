@@ -1,10 +1,4 @@
 
-### Suggested GitHub Repository Name:
-**clouds-nepal-web-dev-summit**
-
-### README.md File:
-
-```markdown
 # Clouds Nepal Web Dev Summit 2025 🌐✨
 
 Welcome to the official repository of **Clouds Nepal Web Dev Summit 2025** — an exclusive web development seminar bringing together aspiring developers, industry leaders, and tech enthusiasts to share, learn, and innovate!
