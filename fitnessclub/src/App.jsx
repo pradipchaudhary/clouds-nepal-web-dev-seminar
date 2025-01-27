@@ -1,11 +1,30 @@
+// import components
+import About from "./components/About";
+import AboutTwo from "./components/AboutTwo";
+import AppInfo from "./components/AppInfo";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Info from "./components/Info";
+import Navbar from "./components/Navbar";
+import Prices from "./components/Prices";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
     return (
-        <div>
-            <div className="container mx-auto">
-                <h1 className="text-3xl underline">Hello</h1>
-            </div>
-        </div>
+        <>
+            <Navbar />
+            <Hero />
+            <About />
+            <AboutTwo />
+            <About />
+            <Info />
+            <Prices />
+            <AppInfo />
+            <Testimonials />
+            <Footer />
+
+        </>
+
     );
 };
 

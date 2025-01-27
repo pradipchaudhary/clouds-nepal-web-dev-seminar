@@ -3,8 +3,36 @@
 @tailwind utilities;
 
 
-.container{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+/*==== Light Mode Variables ====*/
+:root {
+      --primary-color: #fe9808;
+      --secondary-color: #d17d08;
+      --bg-color: #ffffff;
+      --text-color: #1d1f20;
+      --card-bg: #f3f4f6;
+      --nav-bg: rgba(255, 255, 255, 0.8);
+      --overlay-color: rgba(255, 255, 255, 0.79);
+      --nav-bg-sm: #efefef;
+      --about-bg: rgb(241 245 249);
+}
+
+/*==== Dark Mode Variables ====*/
+.dark {
+      --bg-color: #000000;
+      --text-color: rgba(255, 255, 255, 0.87);
+      --card-bg: #111111;
+      --nav-bg: rgba(26, 26, 26, 0.8);
+      --overlay-color: rgba(0, 0, 0, 0.79);
+      --nav-bg-sm: #242424;
+      --about-bg: #000000;
+}
+
+.gap-slider .slick-slide>div {
+      margin: 0 10px;
+      /* Adjust gap here */
+}
+
+.gap-slider .slick-list {
+      margin: 0 -10px;
+      /* Match the gap negative margin for container */
 }
